@@ -12,8 +12,9 @@ app.use(express.json());
 
 app.use("/auth", AuthRouter);
 app.use("/newemployees", EmployeeRouter);
+
 app.get("/", (req, res) => {
-    res.send("<h1>Hello Welcome to server</h1>")
+    res.send("<h1>Hello Welcome to Mock-5-Server</h1>")
 })
 app.listen(3400, () => {
 
